@@ -1,0 +1,38 @@
+restaurant:
+  name: "Food Mood"
+  email: "foodMood@gmai.com"
+  phone: "+27 85 187 5548"
+
+menu:
+  - category: Starter Course
+    items:
+      - name: "Bake Spring Roll"
+        price: 58.85
+        description: "Filo pastry sheets, zucchini, soy sauce, white rice vinegar, white"
+      - name: "Beef Wellington Tart"
+        price: 150.85
+        description: "Beef tenderloin, foie gras, frozen puff pastry, white wine"
+      - name: "Asian-Style Oyster"
+        price: 142.85
+        description: "Soy sauce, spring onion, oyster, sugar, fresh ginger"
+
+  - category: Main Course
+    items:
+      - name: "Cheese Burger"
+        price: 58.85
+        description: "Soy sauce, spring onion, oyster, sugar, fresh ginger"
+      - name: "Spicy Chicken"
+        price: 98.85
+        description: "Boneless chicken breast, soy sauce, brown sugar, hot sauce"
+      - name: "Honey-Garlic Chicken"
+        price: 128.85
+        description: "Chicken breast, apple cider vinegar, soy sauce, maple"
+      - name: "Mini Meatloaves"
+        price: 80.85
+        description: "Ground beef, brown sugar, cheddar cheese, eggg, quick"
+
+  - category: Beverages
+    items:
+      - name: "Stone"
+        price: 18.85
+        description: "Apple cider, bourbon, mint, angosturabitters"
