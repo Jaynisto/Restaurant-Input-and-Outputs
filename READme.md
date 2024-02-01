@@ -1,5 +1,3 @@
-## Menu
-
 # Food Mood Restaurant Menu
 
 ## Contact Information
