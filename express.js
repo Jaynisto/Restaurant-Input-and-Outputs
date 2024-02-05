@@ -32,16 +32,15 @@ app.use(session({
 
 // Function to read YAML file and convert it to JSON
 const readYamlAndConvertToJson = (yamlFilePath) => {
-  const yamlFile = fs.readFileSync(yamlFilePath, 'utf8');
-  const jsonData = yaml.load(yamlFile);
-  return JSON.stringify(jsonData, null, 2);
+    const yamlFile = fs.readFileSync(yamlFilePath, 'utf8');
+    const jsonData = yaml.load(yamlFile);
+    return jsonData;
 };
 
 // Route to serve the JSON representation of the YAML file
 app.get('/', (req, res) => {
     const yamlFilePath = './foodMood.yaml'; // Update with the actual path to your YAML file
     const data = readYamlAndConvertToJson(yamlFilePath);
-    console.log(data)
     res.render('menu', { data });
 });
 

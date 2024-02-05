@@ -5,7 +5,30 @@
         <title>Menu</title>
     </head>
     <body>
-        <h1>Food Mood</h1>
-        {{data}}
+       <h1>{{ data.restaurant.name }} Menu</h1>
+
+        <h2>Contact Information</h2>
+        <ul>
+            <li><strong>Email:</strong> {{ data.restaurant.email }}</li>
+            <li><strong>Phone:</strong> {{ data.restaurant.phone }}</li>
+        </ul>
+
+        <h2>Menu</h2>
+
+        {{#each data.menu}}
+            <h3>{{ category }}</h3>
+            <ul>
+            {{#each items}}
+                <li>
+                <strong>{{ name }}</strong>
+                <ul>
+                    <li><em>Price:</em> ${{ price }}</li>
+                    <li><em>Description:</em> {{ description }}</li>
+                </ul>
+                </li>
+            {{/each}}
+            </ul>
+        {{/each}}
+
     </body>
 </html>
