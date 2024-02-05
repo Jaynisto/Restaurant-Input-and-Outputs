@@ -1,4 +1,53 @@
 body {
-    background-color:  rgb(59, 7, 7);
+    background-color:  rgb(0, 0, 0);
     color: white;
+}
+
+.heading {
+    text-align: center;
+}
+  
+.diamond-line {
+    position: relative;
+    height: 20px; /* Adjust the height as needed */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.diamond-line::before,
+.diamond-line::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px; /* Adjust the size of the diamonds */
+}
+
+.diamond-line::before {
+    top: 0;
+    left: 0;
+    border-color: transparent transparent transparent #fffefe; /* Adjust the color */
+}
+
+.diamond-line::after {
+    top: 0;
+    right: 0;
+    border-color: transparent #fdfcfc transparent transparent; /* Adjust the color */
+}
+
+
+.sub-heading {
+    display: inline-block;
+    background-color: rgb(253, 167, 6);
+    color: #080808; /* Button text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Adjust border radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.sub-heading:hover {
+    background-color: #2980b9; /* Change background color on hover */
 }

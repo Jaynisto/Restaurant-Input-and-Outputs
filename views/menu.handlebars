@@ -5,18 +5,18 @@
         <title>Menu</title>
     </head>
     <body>
-       <h1>{{ data.restaurant.name }} Menu</h1>
+        <div class="heading">
+            <h1>Food Menu</h1>
+            <h5>{{ data.restaurant.name }} Restaurant</h5>
+        </div>
+        <div class="diamond-line"><hr></div>
 
-        <h2>Contact Information</h2>
-        <ul>
-            <li><strong>Email:</strong> {{ data.restaurant.email }}</li>
-            <li><strong>Phone:</strong> {{ data.restaurant.phone }}</li>
-        </ul>
-
-        <h2>Menu</h2>
-
+        <br>
+        <br>
         {{#each data.menu}}
-            <h3>{{ category }}</h3>
+            <div class="sub-heading">
+                <h3>{{ category }}</h3>
+            </div>
             <ul>
             {{#each items}}
                 <li>
@@ -29,6 +29,11 @@
             {{/each}}
             </ul>
         {{/each}}
-
+        
+        <h2>Contact Information</h2>
+        <ul>
+            <li><strong>Email:</strong> {{ data.restaurant.email }}</li>
+            <li><strong>Phone:</strong> {{ data.restaurant.phone }}</li>
+        </ul>
     </body>
 </html>
