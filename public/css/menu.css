@@ -56,6 +56,10 @@ body {
     margin-left: 55px;
 }
 
+.second_div {
+    margin-left: 120px;
+}
+
 .name_price {
     display: flex;
     justify-content: flex-start;

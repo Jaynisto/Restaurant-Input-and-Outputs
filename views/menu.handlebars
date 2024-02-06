@@ -15,28 +15,28 @@
     <br>
 
     {{#each data.menu}}
-    <div class="category-div">
+    <div class="first_div">
         <div class="sub-heading">
             <h3>{{ this.first_category }}</h3>
         </div>
         <br>
         <br>
         {{#each this.first_items}}
-        <div class="item-div">
-            <br>
-            <div class="name_price">
-                <strong>{{ this.name }}</strong>
-                <em>${{ this.price }}</em>
+            <div class="item-div">
+                <br>
+                <div class="name_price">
+                    <strong>{{ this.name }}</strong>
+                    <em>${{ this.price }}</em>
+                </div>
+                <br>
+                <li>Description: {{ this.description }}</li>
             </div>
-            <br>
-            <li>Description: {{ this.description }}</li>
-        </div>
         {{/each}}
     </div>
     <br>
     <hr>
     <br>
-    <div class="category-div">
+    <div class="second_div">
         <div class="sub-heading">
             <h3>{{ this.second_category }}</h3>
         </div>
