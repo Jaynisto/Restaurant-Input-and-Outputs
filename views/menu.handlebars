@@ -5,35 +5,85 @@
         <title>Menu</title>
     </head>
     <body>
-        <div class="heading">
-            <h1>Food Menu</h1>
-            <h5>{{ data.restaurant.name }} Restaurant</h5>
-        </div>
-        <div class="diamond-line"><hr></div>
+       <div class="heading">
+        <h1>Food Menu</h1>
+        <h5>{{ data.restaurant.name }} Restaurant</h5>
+    </div>
+    <div class="diamond-line"><hr></div>
 
+    <br>
+    <br>
+
+    {{#each data.menu}}
+    <div class="category-div">
+        <div class="sub-heading">
+            <h3>{{ this.first_category }}</h3>
+        </div>
         <br>
         <br>
-        {{#each data.menu}}
-            <div class="sub-heading">
-                <h3>{{ category }}</h3>
+        {{#each this.first_items}}
+        <div class="item-div">
+            <br>
+            <div class="name_price">
+                <strong>{{ this.name }}</strong>
+                <em>${{ this.price }}</em>
             </div>
-            <ul>
-            {{#each items}}
-                <li>
-                <strong>{{ name }}</strong>
-                <ul>
-                    <li><em>Price:</em> ${{ price }}</li>
-                    <li><em>Description:</em> {{ description }}</li>
-                </ul>
-                </li>
-            {{/each}}
-            </ul>
+            <br>
+            <li>Description: {{ this.description }}</li>
+        </div>
         {{/each}}
-        
-        <h2>Contact Information</h2>
-        <ul>
-            <li><strong>Email:</strong> {{ data.restaurant.email }}</li>
-            <li><strong>Phone:</strong> {{ data.restaurant.phone }}</li>
-        </ul>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="category-div">
+        <div class="sub-heading">
+            <h3>{{ this.second_category }}</h3>
+        </div>
+        <br>
+        <br>
+        {{#each this.second_items}}
+        <div class="item-div">
+            <br>
+            <div class="name_price">
+                <strong>{{ this.name }}</strong>
+                <em>${{ this.price }}</em>
+            </div>
+            <br>
+            <li>Description: {{ this.description }}</li>
+        </div>
+        {{/each}}
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="category-div">
+        <div class="sub-heading">
+            <h3>{{ this.third_category }}</h3>
+        </div>
+        <br>
+        <br>
+        {{#each this.third_items}}
+        <div class="item-div">
+            <br>
+            <div class="name_price">
+                <strong>{{ this.name }}</strong>
+                <em>${{ this.price }}</em>
+            </div>
+            <br>
+            <li>Description: {{ this.description }}</li>
+        </div>
+        {{/each}}
+    </div>
+    <br>
+    <hr>
+    <br>
+    {{/each}}
+
+    <h2>Contact Information</h2>
+    <ul>
+        <li><strong>Email:</strong> {{ data.restaurant.email }}</li>
+        <li><strong>Phone:</strong> {{ data.restaurant.phone }}</li>
+    </ul>
     </body>
 </html>

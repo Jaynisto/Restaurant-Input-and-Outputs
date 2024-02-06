@@ -6,9 +6,8 @@
     "express-session": "^1.18.0",
     "js-yaml": "^4.1.0"
   },
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node expres.js"
+    "start": "node express.js"
   }
 }
