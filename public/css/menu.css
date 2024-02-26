@@ -1,8 +1,6 @@
 body {
     background-color:  rgb(0, 0, 0);
-    color: white;
-    align-items: center;
-    text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 .heading {
@@ -15,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    clear: both;
 }
 
 .diamond-line::before,
@@ -54,12 +53,62 @@ body {
     background-color: #2980b9; /* Change background color on hover */
 }
 
+
 .name_price {
     display: flex;
-    justify-content:center
+    justify-content: space-evenly;
 }
+
 
 em {
     margin-left: 35px;
 
+}
+
+
+.starter {
+    background-color: rgb(125, 239, 125);
+    float: left;
+    margin-left: 55px;
+    /* clear: both; */
+
+}
+
+.main {
+    background-color: rgb(90, 114, 90);
+    float: right;
+    clear: both;
+    margin-right: 55px; 
+}
+
+.beverages {
+    background-color: rgb(125, 239, 125);
+    float: left;
+    margin-left: 55px;
+    clear: both;
+}
+
+/* Additional styling for better readability */
+.category {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.category h2 {
+    margin-top: 0;
+}
+
+.category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category li {
+    margin-bottom: 10px;
+}
+
+.contacts {
+    align-items: center;
+    text-align: center;
+    clear: both;
 }

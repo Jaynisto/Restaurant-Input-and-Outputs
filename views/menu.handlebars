@@ -12,35 +12,36 @@
         <div class="diamond-line"><hr></div>
         <br>
         <br>
-        {{#each data.menu}}
-            <div class="category_div">
-                <div class="sub-heading">
-                    <h3>{{ category }}</h3>
-                </div>
-                <br>
-                <br>
+        <div id="menu">
+            {{#each data.menu}}
+            <div class="category {{category}}">
+                <h2 class="sub-heading">{{category}}</h2>
+                <ul>
                 {{#each items}}
-                <br> 
-                <div class="name_price">
-                        <strong>{{ name }}</strong>
-                        <em>${{ price }}</em> 
-                </div>
-                <br>
-                <li>Description: {{ description }}</li>
-                {{/each}}        
+                    <li>
+                        <div class="item">
+                            <div class="name_price">
+                                <h3>{{name}}</h3>
+                                <p>Price: ${{price}}</p>
+                            </div>
+                            <p>{{description}}</p>
+                         </div>
+                    </li>
+                {{/each}}
+                </ul>
             </div>
-            <br>
-            <br>
-            <br>   
-        {{/each}}
+            {{/each}}
+        </div>
         <br>
         <div class="diamond-line"><hr></div>
         <br>
-        <h2>Contact Information</h2>
-        <div>
+        <div class="contacts">
+            <h2>Contact Information</h2>
             <strong>Email:</strong> {{ data.restaurant.email }}
             <br>
             <strong>Phone:</strong> {{ data.restaurant.phone }}
         </div>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
 </html>

@@ -4,7 +4,7 @@ restaurant:
   phone: "+27 85 187 5548"
 
 menu:
-  - category: Starter Course
+  - category: starter
     items:
       - name: "Bake Spring Roll"
         price: 58.85
@@ -16,7 +16,7 @@ menu:
         price: 142.85
         description: "Soy sauce, spring onion, oyster, sugar, fresh ginger"
 
-  - category: Main Course
+  - category: main
     items:
       - name: "Cheese Burger"
         price: 58.85
@@ -31,7 +31,7 @@ menu:
         price: 80.85
         description: "Ground beef, brown sugar, cheddar cheese, eggg, quick"
 
-  - category: Beverages
+  - category: beverages
     items:
       - name: "Stone"
         price: 18.85
