@@ -67,7 +67,6 @@ em {
 
 
 .starter {
-    background-color: rgb(125, 239, 125);
     float: left;
     margin-left: 55px;
     /* clear: both; */
@@ -75,14 +74,12 @@ em {
 }
 
 .main {
-    background-color: rgb(90, 114, 90);
     float: right;
     clear: both;
     margin-right: 55px; 
 }
 
 .beverages {
-    background-color: rgb(125, 239, 125);
     float: left;
     margin-left: 55px;
     clear: both;
