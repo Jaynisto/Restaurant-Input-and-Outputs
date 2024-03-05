@@ -42,14 +42,14 @@ Access the application in your web browser at http://localhost:5050.
 
 food-mood-menu/
 │
-├── public/                   # Static files (CSS, client-side JavaScript)
-├── views/                    # Handlebars views
-│   ├── layouts/              # Layouts for Handlebars views
-│   ├── partials/             # Partial views for reusable components
-│   └── menu.handlebars       # Main menu view
-├── foodMood.yaml             # YAML data file for menu items
-├── server.js                 # Express.js server file
-└── README.md                 # Project README file
+├── public/                 # Static files (CSS, client-side JavaScript)
+├── views/                  # Handlebars views
+│   ├── layouts/            # Layouts for Handlebars views
+│   ├── partials/           # Partial views for reusable components
+│   └── menu.handlebars     # Main menu view
+├── foodMood.yaml           # YAML data file for menu items
+├── server.js               # Express.js server file
+└── README.md               # Project README file
 
 # Dependencies
 - Express.js
