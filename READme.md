@@ -25,6 +25,7 @@ clone the repository:
 Install dependencies:
 
 ` cd <project-folder>`
+
 ` npm install`
 
 Start the server:
@@ -39,7 +40,7 @@ Access the application in your web browser at http://localhost:5050.
 
 # File Structure
 
-`food-mood-menu/
+food-mood-menu/
 │
 ├── public/                   # Static files (CSS, client-side JavaScript)
 ├── views/                    # Handlebars views
