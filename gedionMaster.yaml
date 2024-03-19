@@ -1,0 +1,44 @@
+restaurant:
+  name: "Gedion Master"
+  email: "gedion@Masterrestaurant.com"
+  phone: "+2785 177 5848"
+
+menu:
+  - category: starter
+    items:
+      - name: "Baked Roll"
+        price: 58.85
+        description: "Filo pastry sheets, zucchini, soy sauce, white rice vinegar, white"
+      - name: "Beef Master"
+        price: 150.85
+        description: "Beef tenderloin, foie gras, frozen puff pastry, white wine"
+      - name: "Asian-Oyster"
+        price: 142.85
+        description: "Soy sauce, spring onion, oyster, sugar, fresh ginger"
+
+  - category: main
+    items:
+      - name: "king Burger"
+        price: 58.85
+        description: "Soy sauce, spring onion, oyster, sugar, fresh ginger"
+      - name: "Spicy molten Chicken"
+        price: 98.85
+        description: "Boneless chicken breast, soy sauce, brown sugar, hot sauce"
+      - name: "Honey-Garlic Chicken"
+        price: 128.85
+        description: "Chicken breast, apple cider vinegar, soy sauce, maple"
+      - name: "Mini Meatloaves"
+        price: 80.85
+        description: "Ground beef, brown sugar, cheddar cheese, eggg, quick"
+
+  - category: beverages
+    items:
+      - name: "Stone"
+        price: 18.85
+        description: "Apple cider, bourbon, mint, angosturabitters"
+      - name: "Coke"
+        price: 18.85
+        description: "Soda, breckolie, sugar, angosturabi"
+      - name: "Sprite"
+        price: 18.85
+        description: "Apple cider, bourbon, soda water, angosturabitters"

@@ -37,16 +37,37 @@ const readYamlAndConvertToJson = (yamlFilePath) => {
     return jsonData;
 };
 
-// Route to serve the JSON representation of the YAML file
 app.get('/', (req, res) => {
-    const yamlFilePath = './foodMood.yaml'; // Update with the actual path to your YAML file
+    res.render('index');
+});
+
+app.get('/:restaurantName', (req, res) => {
+    const foodMoodRestaurant = './foodMood.yaml'; 
+    const gedionMasterRestaurant = './gedionMaster.yaml';
+    const { restaurantName } = req.params;
+    let restaurantData;
+    if (restaurantName === 'Food Mood') {
+        restaurantData = readYamlAndConvertToJson(foodMoodRestaurant);
+        res.render('menu', { data: restaurantData });
+    } else if (restaurantName === 'Gedion Master') {
+        restaurantData = readYamlAndConvertToJson(gedionMasterRestaurant);
+        res.render('menu', { data: restaurantData });
+    } else {
+        return res.status(404).send('Restaurant not found');
+    }
+
+});
+
+app.get('/api/menu', (req, res) => {
+    const yamlFilePath = './foodMood.yaml';
     const data = readYamlAndConvertToJson(yamlFilePath);
-    res.render('menu', { data });
+    let rest = data.restaurant.filter(restaurant => restaurant.name == req.query.restaurant)
+    res.send(rest);
 });
 
 
 // Start the server
-const PORT = process.env.PORT || 5050;
+const PORT = process.env.PORT || 5051;
 app.listen(PORT, (req, res) => {
     console.log("Application Fired On " + PORT + "!")
 });
